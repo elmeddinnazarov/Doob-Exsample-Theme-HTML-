@@ -1,0 +1,276 @@
+#header {
+    background-color: transparent;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.225);
+
+    .header-box {
+        position: relative;
+
+        .logo {
+            width: 10%;
+        }
+
+        .menu {
+            ul {
+                .home {
+                    &:hover {
+                        .home-menu {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    .home-menu {
+                        opacity: 0;
+                        visibility: hidden;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        background-color: #0F0F11;
+                        color: #acacac;
+                        position: absolute;
+                        z-index: 20;
+                        top: 100%;
+                        padding: 12px 0;
+                        transition: 200ms ease-in-out;
+
+                        li {
+                            display: block;
+                            margin: 0 10px;
+
+                            a {
+                                border-radius: 3px;
+                                font-weight: 500;
+                                padding: 5px 20px;
+                                font-size: 14px;
+                                line-height: 23.38px;
+                                color: #acacac;
+
+                                span {
+                                    background: linear-gradient(95deg, #059dff 15%, #6549d5 45%, #e33fa1 75%, #fb5343 100%) 95%/200% 100%;
+                                    border-radius: 50px;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    letter-spacing: 0.5px;
+                                    padding: 3px 8px;
+                                    margin-left: 5px;
+                                    color: white;
+                                    position: relative;
+                                }
+
+                                &:hover {
+                                    background-color: #080809;
+                                    color: #059dff;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .elements {
+                    &:hover {
+                        .elements-menu {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    .elements-menu {
+                        width: 100%;
+                        opacity: 0;
+                        visibility: hidden;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        background-color: #0F0F11;
+                        color: #acacac;
+                        position: absolute;
+                        z-index: 20;
+                        top: 100%;
+                        left: 0;
+                        padding: 12px 0;
+                        transition: 200ms ease-in-out;
+
+                        ul{                            
+                            li {
+                                display: block;
+                                margin: 0 10px;
+                                padding: 2px 0;
+    
+                                a {
+                                    border-radius: 3px;
+                                    font-weight: 500;
+                                    padding: 5px 20px;
+                                    font-size: 15px;
+                                    line-height: 25.05px;
+                                    color: #acacac;
+    
+                                    &:hover {
+                                        background-color: #080809;
+                                        color: #059dff;
+                                    }
+                                }
+                                span {
+                                    background: linear-gradient(95deg, #059dff 15%, #6549d5 45%, #e33fa1 75%, #fb5343 100%) 95%/200% 100%;
+                                    border-radius: 50px;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    letter-spacing: 0.5px;
+                                    padding: 3px 8px;
+                                    margin-left: 5px;
+                                    color: white;
+                                    position: relative;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+
+
+                .blog {
+                    &:hover {
+                        .blog-menu {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    .blog-menu {
+                        opacity: 0;
+                        visibility: hidden;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        background-color: #0F0F11;
+                        color: #acacac;
+                        position: absolute;
+                        z-index: 20;
+                        top: 100%;
+                        padding: 12px 0;
+                        transition: 200ms ease-in-out;
+
+                        li {
+                            display: block;
+                            margin: 0 10px;
+
+                            a {
+                                border-radius: 3px;
+                                font-weight: 500;
+                                padding: 5px 20px;
+                                font-size: 14px;
+                                line-height: 23.38px;
+                                color: #acacac;
+
+                                &:hover {
+                                    background-color: #080809;
+                                    color: #059dff;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .portfolio {
+                    &:hover {
+                        .portfolio-menu {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    .portfolio-menu {
+                        opacity: 0;
+                        visibility: hidden;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        background-color: #0F0F11;
+                        color: #acacac;
+                        position: absolute;
+                        z-index: 20;
+                        top: 100%;
+                        padding: 12px 0;
+                        transition: 200ms ease-in-out;
+
+                        li {
+                            display: block;
+                            margin: 0 10px;
+
+                            a {
+                                border-radius: 3px;
+                                font-weight: 500;
+                                padding: 5px 20px;
+                                font-size: 14px;
+                                line-height: 23.38px;
+                                color: #acacac;
+
+                                &:hover {
+                                    background-color: #080809;
+                                    color: #059dff;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #acacac;
+                        padding: 25px 20px;
+                        display: block;
+                        transition: 500ms ease-out;
+
+                        &:hover {
+                            color: rgb(5, 157, 255);
+                        }
+                    }
+
+
+                }
+
+                .buy {
+                    a {
+                        color: white !important;
+                        background: linear-gradient(95deg, #059dff 15%, #6549d5 45%, #e33fa1 75%, #fb5343 100%) 95%/200% 100%;
+                        padding: 11px 22px;
+                        margin: 16px 5px 16px 15px;
+                        border-radius: 50px;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-size: 12px;
+                        font-weight: 500;
+                        font-family: Inter, sans-serif;
+                        transition: 300ms ease-in-out;
+                        &:hover {
+                            background: linear-gradient(95deg, #31aafa 15%, #7259d6 45%, #e33fa1 75%, #f76255 100%) 95%/200% 100%;
+                            box-shadow: 0 0 20px 0 #e33fa1;
+                        }
+                    }
+                }
+
+                .phone-bar{
+                    display: none;
+
+                }
+                .light {
+                    a {
+                        color: #ffffff;
+                        padding: 8px 15px;
+                        margin: 16px 5px;
+                        border-radius: 100px;
+                        background-color: #fb5343;
+                        transition: 300ms ease-in-out;
+                        &:hover {
+                            background: linear-gradient(95deg, #31aafa 15%, #7259d6 45%, #e33fa1 75%, #f76255 100%) 95%/200% 100%;
+                            box-shadow: 0 0 20px 0 #e33fa1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

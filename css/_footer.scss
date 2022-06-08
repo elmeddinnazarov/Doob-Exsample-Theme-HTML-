@@ -1,0 +1,153 @@
+.footer {
+    background-color: #060606;
+    .footer-top {
+        letter-spacing: 1px;
+        padding: 100px 0;
+        img {
+            width: 40%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 35px;
+            color: rgb(172, 172, 172);
+        }
+
+        .subject {
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22.5px;
+            color: white;
+        }
+
+        .smt {
+            margin-top: 25px;
+        }
+
+        li {
+            padding: 4px 0;
+            a {
+                position: relative;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 25px;
+                color: rgb(172, 172, 172);
+                &::before{
+                    transition: 300ms ease-in-out;
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: -5px;
+                    width: 0%;
+                    height: 2px;
+                    border-bottom: 2px solid #ffffff;
+                }
+                &:hover{
+                    &::before{
+                    border-bottom: 2px solid #059dff;
+                    width: 100%;
+                    }
+                }
+            }
+
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22.5px;
+            color: white;
+        }
+
+        h6 {
+            width: 70%;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            color: rgb(172, 172, 172);
+        }
+
+        .inp-area {
+            margin: 40px 0;
+            input[type=email] {
+                margin-right: 15px;
+                border-radius: 10px;
+                height: 45px;
+                width: 200px;
+                padding: 15px;
+                background-color: transparent;
+                border: 1px solid rgba(128, 128, 128, 0.297);
+                box-sizing: border-box;
+                color: white;
+                transition: 250ms ease-in-out;
+                &:focus{
+                    outline: none;
+                    border: 1px solid #059dff;
+                }
+            }
+
+            a {
+                box-sizing: border-box;
+                padding: 15px 22px;
+                letter-spacing: 1px;
+                border-radius: 10px;
+                background: linear-gradient(95deg, #059dff 15%, #6549d5 45%, #e33fa1 75%, #fb5343 100%) 95%/200% 100%;
+                text-decoration: none;
+                font-size: 16px;
+                line-height: 47px;
+                font-weight: 400;
+                color: white;
+                transition: 250ms ease-in-out;
+
+                &:hover {
+                    background: linear-gradient(95deg, #31aafa 15%, #7259d6 45%, #e33fa1 75%, #f76255 100%) 95%/200% 100%;
+                    box-shadow: 0 0 20px 0 #e33fa1;
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        ul{
+            li{
+                padding:25px 25px 25px 0;
+                a{
+                    position: relative;
+                    color: rgb(172, 172, 172);
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 23.38px;
+                    &::before{
+                        transition: 300ms ease-in-out;
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        bottom: -5px;
+                        width: 0%;
+                        height: 2px;
+                        border-bottom: 2px solid #ffffff;
+                    }
+                    &:hover{
+                        &::before{
+                        border-bottom: 2px solid #059dff;
+                        width: 100%;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        p{
+            color: rgb(172, 172, 172);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 23.38px;
+            margin-top: 20px;
+        }
+
+    }
+}
